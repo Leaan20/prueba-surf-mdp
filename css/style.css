@@ -454,6 +454,10 @@ display: flex;
     align-items: center;
     gap:0.9em;
 }
+.borja-video{
+    width:560px;
+    height:315px;
+}
 
 .expand:hover{
     width:17rem;
@@ -761,8 +765,8 @@ section .beach-card{
 
 
 .borja-video{
-    width:17rem;
-    height: 15rem;
+    width:240px;
+    height:160px;
 }
 
 
