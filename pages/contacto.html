@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--LINK BOOTSTRAP  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <!--LINK CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="../index.html">
+                <img class="logo"   src="../assets/icon/logo-surf-mdp.png" alt="logo">
+            </a>
+
+
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./playas.html">Playas</a></li>
+                <li><a href="./escuelas.html">Escuelas</a></li>
+                <li><a href="./equipo.html">Equipo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+        </nav>
+        
+        <!-- <img class="banner" src="../assets/image/index/mick-banner.webp" alt="banner mick fanning surfeando"> -->
+
+                 <!-- Carousel surfistas pro -->
+
+                 <div id="carousel-surfers" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-surfers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-surfers" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-surfers" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+    
+                    <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1500">
+                                <img  src="../assets/image/index/mick-carousel.webp" class="d-block w-100 carousel-img" alt="Mick Fanning en una session">
+                            </div>
+    
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="../assets/image/index/kelly-carousel.jpg" class="d-block w-100 carousel-img" alt="Kelly Slater haciendo un aereal">
+                            </div>
+    
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="../assets/image/index/jjf-carousel.jpg" class="d-block w-100 carousel-img" alt="John John Florence saliendo de un tubo ">
+                            </div>
+                    </div>
+    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-surfers" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+    
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-surfers" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+    
+                </div>
+
+    </header>
+
+    <main>
+            <h1>Contactanos</h1>
+            <!--Formulario-->
+        <div class="form">
+            <div class="form-container">
+
+                <form action="">
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" placeholder="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="direccion de email" required>
+
+                    <p>Practicas surf ?</p>
+
+                        <!--asociamos el for con el id , y los names entre si , para que elija una u otra opcion-->
+
+                    <label for="Si" >Si</label>
+                    <input type="radio" id="si" name="pregunta">
+
+                    <label for="No" >No</label>
+                    <input type="radio" id="no" name="pregunta" >
+
+                        
+                        <fieldset>
+                            <legend>Que tipos de tabla te gustan ?</legend>
+                            
+                            <label for="fun">Funboard</label>
+                            <input type="checkbox" id="fun" name="tabla">
+                            
+                            <label for="fish">Fish</label>
+                            <input type="checkbox" id="fish" name="tabla">
+                            
+                            <label for="short">Shortboard</label>
+                            <input type="checkbox" id="short" name="tabla">
+                            
+                            <label for="long">Longboard</label>
+                            <input type="checkbox" id="long" name="tabla">
+
+                        </fieldset>
+                    <p>Seleccione su nivel de surf</p>
+                    <select name="nivel" id="nivel">
+                        <option value="Principiante">Principiante</option>
+                        <option value="Intermedio">Intermedio</option>
+                        <option value="Avanzado">Avanzado</option>
+                        <option value="Pro">Pro</option>
+                    </select>
+
+                    <br>
+
+                    <label for="comentario">Deja tu comentario:</label>
+                    <textarea name="comentario" id="comentario" cols="20" rows="10"></textarea>
+
+                    <input type="reset" value="reset">
+                    <input type="submit" value="enviar">
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><img class="socialIcon" src="../assets/icon/instagram.png" alt="icon-Ig"></a>
+            <a href="#"><img class="socialIcon" src="../assets/icon/facebook.png" alt="icon-face"></a>
+            <a href="#"><img class="socialIcon" src="../assets/icon/whatsapp.png" alt="icon-whats"></a>
+            <a href="#"><img class="socialIcon" src="../assets/icon/gorjeo.png" alt="icon-twitter o X"></a>
+        </div>
+
+        <div class="find">
+            <p>encontranos en:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.0831583507775!2d-57.5448874!3d-38.0917281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584df3c07486daf%3A0x4fdbe624673dd672!2sFaro%20Punta%20Mogotes!5e0!3m2!1ses!2sar!4v1698335447917!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <p class="copyr">Derechos reservados 2023 &copy </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>
