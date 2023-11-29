@@ -118,7 +118,13 @@ ul li a{
     flex-flow:column wrap;
     align-items: center;
     justify-content: start;
-    margin: 0.5em;
+    margin-top: 0.2em;
+    overflow: hidden;
+}
+
+.find iframe{
+    width: 400px;
+    height: 300px;
 }
 
 .footer .socialIcon{
@@ -595,6 +601,12 @@ display: flex;
 .navbar ul li{
     display: block;
     text-align: start;
+}
+
+/* Footer */
+.find iframe{
+    width: 200px;
+    height: 200px;
 }
 
 /* Playas */
