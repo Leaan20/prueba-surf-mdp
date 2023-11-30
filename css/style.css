@@ -448,6 +448,15 @@ display: flex;
     transition-duration: 0.5s;
 }
 
+.expand:hover{
+    width:17rem;
+    height:17rem;
+    box-shadow: 10px 6px 35px -4px rgba(169,194,16,0.75);
+    transition-duration: 0.5s;
+    padding:0;
+    margin:0;
+}
+
 .borja-channel{
     display:flex;
     flex-direction:column;
@@ -459,14 +468,6 @@ display: flex;
     height:315px;
 }
 
-.expand:hover{
-    width:17rem;
-    height:17rem;
-    box-shadow: 10px 6px 35px -4px rgba(169,194,16,0.75);
-    transition-duration: 0.5s;
-    padding:0;
-    margin:0;
-}
 
 
 /*---------------------CONTACTO------------------------*/
@@ -549,7 +550,7 @@ display: flex;
 
 .school-parag{
     display:block;
-    width: 70%;
+    width: 80%;
 }
 
 /* Equipo */
@@ -730,13 +731,6 @@ section .beach-card{
 
 
 
-
-
-
-
-
-
-
     /* Escuelas */
 
 .surf-school .school-container{
@@ -759,8 +753,37 @@ section .beach-card{
     gap:0.5em;
     }
 
-.borja-channel{
-    gap:0.5 em;
+.img-school1{
+    width:10rem;
+    height:10rem;
+    grid-area: img1;
+    object-fit: cover;
+    transition-duration: 0.5s;
+}
+
+.img-school2{
+    width:10rem;
+    height:10rem;
+    grid-area:img2;
+    object-fit: cover;
+    transition-duration: 0.5s;
+}
+
+.img-school3{
+    width:10rem;
+    height:10rem;
+    grid-area:img3;
+    object-fit: cover;
+    transition-duration: 0.5s;
+}
+
+.expand:hover{
+    width:12rem;
+    height:12rem;
+    box-shadow: 8px 4px 17px -6px rgba(169,194,16,0.75);
+    transition-duration: 0.5s;
+    padding:0;
+    margin:0;
 }
 
 
