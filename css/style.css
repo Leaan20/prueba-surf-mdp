@@ -304,6 +304,9 @@ display: flex;
 .neoprene h3,p,h2{
     margin: 1em;
 }
+.neoprene p{
+    font-size:1.2em;
+}
 
 
 .neoprene .suit {
@@ -392,7 +395,7 @@ display: flex;
 .surf-school .school-container{
     display:flex;
     flex-flow:row nowrap;
-    margin:1rem;
+    margin:0;
 }
 
 .school-parag{
@@ -401,7 +404,7 @@ display: flex;
     display: flex;
     flex-direction: column;
     width:35%;
-    margin:3rem;
+    margin:1rem;
     justify-content: center;
 }
 
@@ -411,8 +414,8 @@ display: flex;
     "img1 img2"
     "img1 img3"
     ;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     width:100vh;
     justify-items: center;
     justify-content: center;
@@ -520,24 +523,31 @@ display: flex;
 
 @media screen and (max-width: 1024px){
 
+/* Estilo general subtitulos y parrafos */
+h2,p{
+    text-align:center;
+    font-size:0.8em;
+}
 
 
-/* Playas */
+/* Navbar */
 
-/* .beach{
-    display:flex;
-    flex-flow: column nowrap;
+.navbar{
+    flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
-} */
+    align-items:center;
+    width: 100%;
+}
+.navbar ul li{
+    display: block;
+    text-align: start;
+}
 
-/* .beach{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:auto;
-    justify-content: center;
-    align-content: center;
-} */
+/* Footer */
+.find iframe{
+    width: 200px;
+    height: 200px;
+}
 
 
 /* Escuelas */
@@ -552,6 +562,20 @@ display: flex;
     display:block;
     width: 80%;
 }
+
+.gallery{
+    display:grid;
+    grid-template-areas:
+    "img1 img2"
+    "img3 img3";
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    width:100vw;
+    justify-items: center;
+    justify-content: center;
+    gap:0.3em;
+    margin:0px;
+    }
 
 /* Equipo */
 
@@ -572,11 +596,43 @@ display: flex;
         align-items: center;
     }
 
-.accesories-container{
+.sboard .surfboard{
+    width: 15rem;
+    height:17rem;
+    margin:0px;
+}
+
+.accesories{
+    display:flex;
     flex-direction:column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+}
+.accesories-container{
+    width:80%;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 
+.accesories h2{
+    margin:20px;
+}
+
+.accesories-card{
+    width:20rem;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    margin:1em;
+}
+
+.accesories-card img{
+    width:100%;
+    height:15rem;
+    padding:2px;
+    margin-top:2px;
+    margin-bottom:2px;
 }
 
 }
@@ -590,128 +646,77 @@ display: flex;
 @media screen and (max-width:768px){
 
     /* Estilo general subtitulos y parrafos */
-    h2,p{
-        text-align:center;
-        font-size:0.8em;
+
+    h1{
+        font-size: 1.2em;
     }
-
-
-    /* Navbar */
-.navbar{
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items:center;
-    width: 100%;
-}
-.navbar ul li{
-    display: block;
-    text-align: start;
-}
-
-/* Footer */
-.find iframe{
-    width: 200px;
-    height: 200px;
-}
-
-/* Playas */
-
-/* .container-beach{
-
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    align-items: center;
-    justify-items:center;
-    justify-content:center;
-    align-content:center;
-} */
-
-
-    /* Escuelas */
-
-
-.borja-video{
-    width:17rem;
-    height: 15rem;
-}
-
-
-
-
-}
-
-/* ----------------------------------------------- */
-
-
-/* tamaño de 440px de ancho */
-
-
-/*--------------- tablet a mobile----------------- */
-
-@media screen and (max-width:440px){
-
-    /* Estilo general subtitulos y parrafos */
-
-
-
-h1{
-    font-size: 1.2em;
-}
-
-h2, h3, h4{
+    
+    h2, h3, h4{
+            text-align:center;
+            font-size: 1em;
+        }
+    p{
+        font-size:0.7em;
         text-align:center;
-        font-size: 1em;
     }
-p{
-    font-size:0.7em;
-    text-align:center;
-}
+    
+     /* Navbar */
 
- /* Navbar */
 .navbar{
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items:center;
-    width: 100%;
-    font-size:1.5em;
-}
-
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+        font-size:1.5em;
+    }
+    
 .logo{
     width: 4rem;
     height: 4rem;
     padding: 0;
 }
-
-/* index */
-
+    
+    /* index */
+    
 .lele{
     width:16rem;
     height:12.5rem;
     margin:2px;
 }
-
-
+    
+    
 .img-history{
     width:16rem;
     height:12.5rem;
     margin:2px;
 }
+    
+    
+    /* Playas */
 
-
-/* Playas */
 .beach-container{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
-
+    
 section .beach-card{
     width: 15rem;
     height: 20rem;
 }
+    
+    /* Equipo */
 
-/* Equipo */
+.sboard div p{
+    font-size: 14px;
+}
+
+.neoprene p{
+    font-size:14px;
+}
+
+
 .accesories-card{
     width:100%;
     overflow: hidden;
@@ -719,25 +724,23 @@ section .beach-card{
     text-align: center;
     margin:1px;
 }
-
+    
 .accesories-card .p-container{
     width:100%;
 }
-
+    
 .accesories-card div p {
     margin:2px;
     font-size:0.7em;
 }
 
-
-
-    /* Escuelas */
-
+        /* Escuelas */
+    
 .surf-school .school-container{
     margin:0.5 0 0.5 0;
     overflow: hidden;
 }
-
+    
 .gallery{
     display:grid;
     grid-template-areas:
@@ -751,50 +754,53 @@ section .beach-card{
     justify-items: center;
     justify-content: center;
     gap:0.5em;
+    margin:0px;
     }
-
+    
 .img-school1{
-    width:10rem;
-    height:10rem;
-    grid-area: img1;
-    object-fit: cover;
-    transition-duration: 0.5s;
+     width:11rem;
+     height:11rem;
 }
-
-.img-school2{
-    width:10rem;
-    height:10rem;
-    grid-area:img2;
-    object-fit: cover;
-    transition-duration: 0.5s;
+    
+ .img-school2{
+    width:11rem;
+    height:11rem;
 }
-
+    
 .img-school3{
-    width:10rem;
-    height:10rem;
-    grid-area:img3;
-    object-fit: cover;
-    transition-duration: 0.5s;
+    width:11rem;
+    height:11rem;
 }
-
+    
 .expand:hover{
-    width:12rem;
-    height:12rem;
-    box-shadow: 8px 4px 17px -6px rgba(169,194,16,0.75);
-    transition-duration: 0.5s;
-    padding:0;
-    margin:0;
+    width:13rem;
+    height:13rem;
 }
 
+.borja-channel{
+     gap:0.5 em;
+}
+    
 
 .borja-video{
     width:240px;
     height:160px;
 }
+    /* Contacto */
+.form-container textarea{
+    width:12rem;
+    height:8rem;
+    margin-left:25px;
+}
+
 
 
 
 }
+
+/* ----------------------------------------------- */
+
+
 
 
 /*---------------- Fin responsive ----------------*/
