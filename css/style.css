@@ -1,3 +1,15 @@
+/* Variables */
+
+
+:root{
+
+    /* Tamaño de fuentes */
+    
+    --font-size-default:20px;
+
+}
+
+
 /*Reset universal*/
 
 *{
@@ -14,7 +26,7 @@ a{
 /*Estilos generales*/
 
 html{
-    font-size:20px;
+    font-size:var(--font-size-default);
 }
 body{
     background-color:#faf0ca;
@@ -26,10 +38,6 @@ body{
 
 /* fuentes */
 
-/* @font-face{
-    font-family: "surfUp";
-    src: url(../assets/fonts/SurfsUp.TTF);
-} */
 @font-face{
     font-family:"akkurat";
     src: url(../assets/fonts/Akkurat.ttf);
@@ -45,10 +53,14 @@ body{
 
 /*Estructura y diseño del header-navbar*/
 
+.bootnav{
+    display: none;
+}
+
 /* navbar con flex */
-.navbar{
+.navbar-o{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: end;
     background-color:#0d3b66;
     display: flex;
@@ -58,7 +70,7 @@ body{
     align-items:center;
 
 }
-.navbar ul li{
+.navbar-o ul li{
     display: inline-block;
     margin:10px;
     margin-bottom: 0;
@@ -69,7 +81,7 @@ ul li a{
     transition:0.5s;
 }
 
-.navbar ul li a:hover{
+.navbar-o ul li a:hover{
     background-color:#ee964b ;
     color:#0d3b66;
     border-radius: 25px;
@@ -80,8 +92,8 @@ ul li a{
 /*logo navbar*/
 
 .logo{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 /*Estilo del carousel*/
@@ -225,7 +237,7 @@ section .beach-card{
     display: inline-block;
     overflow: hidden;
     box-shadow: 6px 11px 13px -3px rgba(0,0,0,0.6);
-    font-size:0.75em;
+    font-size:0.80em;
 }
 
 section .beach-card img{
@@ -532,16 +544,43 @@ h2,p{
 
 /* Navbar */
 
-.navbar{
-    flex-flow: column wrap;
+
+.navbar-o{
+    display:none;
+    /* flex-flow: column wrap;
     justify-content: center;
     align-items:center;
-    width: 100%;
+    width: 100%; */
 }
-.navbar ul li{
+/* .navbar ul li{
     display: block;
     text-align: start;
+} */
+
+.bootnav{
+    display:flex;
+    width: 100%;
+    background-color:#0d3b66;
+    color:#ee964b;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:0.8em;
+
 }
+
+.bootnav #menu ul li a{
+    padding:3px;
+    color:#ee964b;
+    transition:0.5s;
+}
+
+.bootnav #menu ul li a:hover{
+    background-color:#ee964b ;
+    color:#0d3b66;
+    border-radius: 25px;
+    padding:3px;
+    width: auto;
+}
+
 
 /* Footer */
 .find iframe{
@@ -576,6 +615,14 @@ h2,p{
     gap:0.3em;
     margin:0px;
     }
+
+/* Playas */
+.beach-card p{
+    font-size:11px;
+}
+
+
+
 
 /* Equipo */
 
@@ -647,19 +694,19 @@ h2,p{
 
     /* Estilo general subtitulos y parrafos */
 
-    h1{
-        font-size: 1.2em;
-    }
+h1{
+    font-size: 1.2em;
+}
     
-    h2, h3, h4{
-            text-align:center;
-            font-size: 1em;
-        }
-    p{
-        font-size:0.7em;
-        text-align:center;
+h2, h3, h4{
+    text-align:center;
+    font-size: 1em;
     }
-    
+p{
+    font-size:0.7em;
+    text-align:center;
+}
+
      /* Navbar */
 
 .navbar{
@@ -675,7 +722,7 @@ h2,p{
     height: 4rem;
     padding: 0;
 }
-    
+
     /* index */
     
 .lele{
@@ -705,7 +752,7 @@ section .beach-card{
     width: 15rem;
     height: 20rem;
 }
-    
+
     /* Equipo */
 
 .sboard div p{
@@ -740,7 +787,10 @@ section .beach-card{
     margin:0.5 0 0.5 0;
     overflow: hidden;
 }
-    
+
+.school-container .school-parag{
+    font-size:0.8em;
+}
 .gallery{
     display:grid;
     grid-template-areas:
@@ -786,6 +836,7 @@ section .beach-card{
     width:240px;
     height:160px;
 }
+
     /* Contacto */
 .form-container textarea{
     width:12rem;
