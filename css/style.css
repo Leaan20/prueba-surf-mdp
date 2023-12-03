@@ -535,11 +535,11 @@ display: flex;
 
 @media screen and (max-width: 1024px){
 
-/* Estilo general subtitulos y parrafos */
+/* Estilo general subtitulos y parrafos
 h2,p{
     text-align:center;
     font-size:0.8em;
-}
+} */
 
 
 /* Navbar */
@@ -547,15 +547,8 @@ h2,p{
 
 .navbar-o{
     display:none;
-    /* flex-flow: column wrap;
-    justify-content: center;
-    align-items:center;
-    width: 100%; */
 }
-/* .navbar ul li{
-    display: block;
-    text-align: start;
-} */
+
 
 .bootnav{
     display:flex;
@@ -564,7 +557,6 @@ h2,p{
     color:#ee964b;
     font-family: 'Times New Roman', Times, serif;
     font-size:0.8em;
-
 }
 
 .bootnav #menu ul li a{
@@ -583,6 +575,7 @@ h2,p{
 
 
 /* Footer */
+
 .find iframe{
     width: 200px;
     height: 200px;
@@ -590,6 +583,7 @@ h2,p{
 
 
 /* Escuelas */
+
 .surf-school .school-container{
     display: flex;
     flex-direction:column;
@@ -617,11 +611,10 @@ h2,p{
     }
 
 /* Playas */
+
 .beach-card p{
     font-size:11px;
 }
-
-
 
 
 /* Equipo */
@@ -629,6 +622,10 @@ h2,p{
 
 .sboard{
     flex-direction:column;
+}
+
+.sboard p{
+    font-size: 16px;
 }
 .sboard :nth-child(odd) {
     display: flex;
@@ -649,6 +646,15 @@ h2,p{
     margin:0px;
 }
 
+.neoprene h4 {
+    font-size: 20px;
+}
+
+.neoprene p{
+    font-size:16px;
+}
+
+
 .accesories{
     display:flex;
     flex-direction:column;
@@ -664,6 +670,10 @@ h2,p{
 
 .accesories h2{
     margin:20px;
+}
+
+.accesories p{
+    font-size: 16px;
 }
 
 .accesories-card{
@@ -697,26 +707,31 @@ h2,p{
 h1{
     font-size: 1.2em;
 }
-    
-h2, h3, h4{
+
+h2{
     text-align:center;
     font-size: 1em;
     }
+
+h3, h4{
+    font-size:0.85em;
+}
+
 p{
     font-size:0.7em;
     text-align:center;
 }
 
-     /* Navbar */
+ /* Navbar */
 
 .navbar{
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items:center;
-        width: 100%;
-        font-size:1.5em;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    font-size:1.5em;
     }
-    
+
 .logo{
     width: 3.5rem;
     height: 3.8rem;
@@ -724,22 +739,20 @@ p{
 }
 
     /* index */
-    
+
 .lele{
     width:16rem;
     height:12.5rem;
     margin:2px;
 }
-    
-    
+
 .img-history{
     width:16rem;
     height:12.5rem;
     margin:2px;
 }
-    
-    
-    /* Playas */
+
+/* Playas */
 
 .beach-container{
     display:flex;
@@ -808,8 +821,8 @@ section .beach-card{
     }
     
 .img-school1{
-     width:11rem;
-     height:11rem;
+    width:11rem;
+    height:11rem;
 }
     
  .img-school2{
@@ -830,7 +843,7 @@ section .beach-card{
 .borja-channel{
      gap:0.5 em;
 }
-    
+
 
 .borja-video{
     width:240px;
